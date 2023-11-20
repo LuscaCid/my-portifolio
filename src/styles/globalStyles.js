@@ -10,10 +10,10 @@ export default createGlobalStyle`
     font-size: 62.5%;
     --ff-primary: 'Poppins', sans-serif;
     --elements-border-radius : 0.6;
-    
+
   }
   body{
-    background: #222;
+    background: ${({theme}) => theme.colors.background}
     
   }
     
