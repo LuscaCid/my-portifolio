@@ -85,9 +85,7 @@ export function Principal(){
         
       </Stacks>
       
-        <Portifolio 
-        title = "primeiro"
-        />
+        <Portifolio user= "luscacid"/>
       
 
       </main>
