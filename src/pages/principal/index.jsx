@@ -1,10 +1,12 @@
-import {Container, MainContent, About, Stacks} from './style'
+import {Container, MainContent, About, Stacks, Portifolios} from './style'
 import { Header } from '../../components/header'
 import { H1 } from '../../components/title'
 import { P } from '../../components/paragraph'
 import { ButtonBlue } from '../../components/button-blue'
 import { StackCard } from '../../components/stackCard'
 import { SideNav } from '../../components/sideNav'
+import { Portifolio } from '../../components/portifolio'
+
 
 export function Principal(){
   return (
@@ -82,6 +84,11 @@ export function Principal(){
         />
         
       </Stacks>
+      
+        <Portifolio 
+        title = "primeiro"
+        />
+      
 
       </main>
       

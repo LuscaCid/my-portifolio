@@ -42,3 +42,7 @@ export const Stacks = styled.div`
     flex-wrap: wrap;
     gap: 2rem;
 `
+
+export const Portifolios = styled.div`
+
+`
