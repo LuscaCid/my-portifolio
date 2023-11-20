@@ -1,5 +1,7 @@
 export default {
   colors : {
-    background : "#222"
+    background : "#111",
+    background2 : "#192432",
+    black : "#000000"
   }
 }
