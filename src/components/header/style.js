@@ -4,7 +4,7 @@ export const Container = styled.header`
     width: 100%;
     background: ${({theme}) => theme.colors.black};
     position: fixed;
-    box-shadow: 0 1rem 2rem -1rem rgb(255,0,0,0.1);
+    box-shadow: 0 1rem 2rem -1rem rgb(0,0,0,0.5);
     top: 0;
     padding: 2.3rem;
     display: flex;

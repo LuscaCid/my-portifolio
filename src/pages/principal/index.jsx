@@ -4,12 +4,13 @@ import { H1 } from '../../components/title'
 import { P } from '../../components/paragraph'
 import { ButtonBlue } from '../../components/button-blue'
 import { StackCard } from '../../components/stackCard'
-
+import { SideNav } from '../../components/sideNav'
 
 export function Principal(){
   return (
     <Container>
       <Header />
+      <SideNav />
       <main>
         <MainContent>
         <div className="texts">
@@ -17,7 +18,7 @@ export function Principal(){
           isPrincipal
           title = "I'm a fullstack developer"
           />
-          <p>Hi! Welcome to my github. I'm fascinated by programming and i created a lot of single projects with Javascript, html, css, git, github, react, sqlite, node.js.</p>
+          <p>Hi! Welcome to my portifolio web-site. I'm fascinated by programming and i created a lot of single projects with Javascript, html, css, git, github, react, sqlite, node.js.</p>
           <ButtonBlue title = "Portifolio" 
           />
         </div>
@@ -45,25 +46,41 @@ export function Principal(){
         title = "javascript"
         />
         <StackCard
-        lang= "javascript" 
-        src = 'src/assets/javascript.png'
-        title = "javascript"
+        lang= "git" 
+        src = 'src/assets/git.png'
+        title = "git"
         />
         <StackCard
-        lang= "javascript" 
-        src = 'src/assets/javascript.png'
-        title = "javascript"
+        lang= "npm" 
+        src = 'src/assets/npm-svgrepo-com.svg'
+        title = "npm"
         />
         <StackCard
-        lang= "javascript" 
-        src = 'src/assets/javascript.png'
-        title = "javascript"
+        lang= "html" 
+        src = 'src/assets/html-5-svgrepo-com.svg'
+        title = "HTML"
         />
         <StackCard
-        lang= "javascript" 
-        src = 'src/assets/javascript.png'
-        title = "javascript"
+        lang= "css" 
+        src = 'src/assets/css-3-svgrepo-com.svg'
+        title = "CSS"
         />
+        <StackCard
+        lang= "sqlite" 
+        src = 'src/assets/sqlite-svgrepo-com.svg'
+        title = "sqlite"
+        />
+        <StackCard
+        lang= "node" 
+        src = 'src/assets/node.png'
+        title = "node"
+        />
+        <StackCard
+        lang= "github" 
+        src = 'src/assets/github.png'
+        title = "github"
+        />
+        
       </Stacks>
 
       </main>
