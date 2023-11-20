@@ -38,5 +38,7 @@ export const About = styled.div`
     gap: 2rem;
 `
 export const Stacks = styled.div`
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 `

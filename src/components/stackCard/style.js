@@ -10,12 +10,15 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
     >img{
         width: 10rem;
     }
     box-shadow: ${({lang})=> {
         if(lang == "javascript"){
             return `0 1rem 2rem -1rem rgb(255,255,0, 0.5)`
+        } else if(lang == "react"){
+            return  "0 1rem 2rem -1rem #61DBFB"
         }
 
 
