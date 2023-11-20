@@ -28,7 +28,7 @@ export function Portifolio({user}){
             
             data.map((repo, index) => {
                 console.log(data)
-                if(index < 30 && index > 10){
+                if(index < 20 && index > 15){
                     return <ProjectCard 
                     key = {String(index)}
                     title = {repo.name} />
