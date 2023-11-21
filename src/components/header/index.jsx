@@ -1,20 +1,40 @@
 import { Container } from './style'
+import { Link, animateScroll as scroll } from 'react-scroll';
+import {React} from 'react'
 
 export function Header(){
+    function handleScrollToAbout(){
+        scroll.scrollToTop()
+    }
     return (
         <Container>
             <h1>LucasCid</h1>
             <nav>
                 <ul>
-                    <li onClick = {()=> {
-                        console.log('clickou')
-                    }}>About</li>
-
-                    <li>Stacks</li>
-
-                    <li>Projects</li>
+        
+                    <li onClick={handleScrollToAbout}
+                    >About</li>
                     
-                    <li>Contact</li>
+                    <Link 
+                    smooth
+                    duration={500}
+                    
+                    to={'stacks' }>
+                        <li>Stacks</li>
+                    
+                    </Link>
+                    <Link 
+                    duration={500}
+                    smooth
+                    to='projects'>
+                        <li>Projects</li>
+                    </Link>
+                    <Link 
+                    duration={500}
+                    smooth
+                    to='contact'>
+                        <li>Contact</li>
+                    </Link>
                 </ul>
             </nav>            
         </Container>

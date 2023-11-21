@@ -8,14 +8,15 @@ import { SideNav } from '../../components/sideNav'
 import { Portifolio } from '../../components/portifolio'
 import { Contact } from '../../components/contact'
 
-
 export function Principal(){
+  
+
   return (
     <Container>
       <Header />
       <SideNav />
       <main>
-        <MainContent>
+        <MainContent id='main-content'>
           <div className="texts">
             <H1 
             isPrincipal
@@ -37,7 +38,7 @@ export function Principal(){
 
         </About>
         <H1 title='Stacks'/>
-        <Stacks>
+        <Stacks id='stacks'>
           <StackCard
           lang= "react" 
           src = 'src/assets/react-svgrepo-com (1).svg'
@@ -85,9 +86,14 @@ export function Principal(){
           />
           
         </Stacks>
+        <div id='projects'>
+          <Portifolio 
+          user= "luscacid"/>
+        </div>
+        <div id="contact">
+          <Contact/>
+        </div>
         
-        <Portifolio user= "luscacid"/>
-        <Contact />
         
       </main>
       
