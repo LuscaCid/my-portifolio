@@ -29,7 +29,7 @@ export function Portifolio({user}){
             const token = "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"
         
             const headers = new Headers({
-                'Authorization' : `token ${token}`,
+                'Authorization' : `${token}`,
                 'Accept' : 'application/vnd.github.v3+json'
             })
 

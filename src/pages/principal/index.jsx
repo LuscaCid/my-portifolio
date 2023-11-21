@@ -5,7 +5,7 @@ import { P } from '../../components/paragraph'
 import { ButtonBlue } from '../../components/button-blue'
 import { StackCard } from '../../components/stackCard'
 import { SideNav } from '../../components/sideNav'
-import { Portifolio } from '../../components/portifolio'
+import { Portifolio } from '../../components/portfolio'
 import { Contact } from '../../components/contact'
 
 export function Principal(){
