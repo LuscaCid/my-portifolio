@@ -8,8 +8,16 @@ import { SideNav } from '../../components/sideNav'
 import { Portifolio } from '../../components/portfolio'
 import { Contact } from '../../components/contact'
 
+
+
 export function Principal(){
-  
+  const avatar_img = ``
+  const github_img = ``
+  const git_img = ``
+  const react_img = ``
+  const javascript_img = ``
+  const npm_img = ``
+  const sqlite_img = ``
 
   return (
     <Container>
@@ -44,47 +52,47 @@ export function Principal(){
         <Stacks >
           <StackCard
           lang= "react" 
-          src = './src/assets/react-svgrepo-com (1).svg'
+          src = '/src/assets/react-svgrepo-com (1).svg'
           title = "React.js"
           />
           <StackCard
           lang= "javascript" 
-          src = './src/assets/javascript.png'
+          src = '/src/assets/javascript.png'
           title = "javascript"
           />
           <StackCard
           lang= "git" 
-          src = './src/assets/git.png'
+          src = '/src/assets/git.png'
           title = "git"
           />
           <StackCard
           lang= "npm" 
-          src = './src/assets/npm-svgrepo-com.svg'
+          src = '/src/assets/npm-svgrepo-com.svg'
           title = "npm"
           />
           <StackCard
           lang= "html" 
-          src = './src/assets/html-5-svgrepo-com.svg'
+          src = '/src/assets/html-5-svgrepo-com.svg'
           title = "HTML"
           />
           <StackCard
           lang= "css" 
-          src = './src/assets/css-3-svgrepo-com.svg'
+          src = '/src/assets/css-3-svgrepo-com.svg'
           title = "CSS"
           />
           <StackCard
           lang= "sqlite" 
-          src = './src/assets/sqlite-svgrepo-com.svg'
+          src = '/src/assets/sqlite-svgrepo-com.svg'
           title = "sqlite"
           />
           <StackCard
           lang= "node" 
-          src = './src/assets/node.png'
+          src = '/src/assets/node.png'
           title = "node"
           />
           <StackCard
           lang= "github" 
-          src = '../../assets/github.png'
+          src = {`/src/assets/github.png`}
           title = "github"
           />
           
