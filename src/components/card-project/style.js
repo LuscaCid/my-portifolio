@@ -11,6 +11,9 @@ export const Container = styled.div`
     margin-top: 1rem;
     border-radius: 0.4rem;
     >a{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         color: white;
         text-decoration: none;
     }

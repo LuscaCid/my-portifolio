@@ -1,4 +1,4 @@
-import {Container, MainContent, About, Stacks, Portifolios} from './style'
+import {Container, MainContent, About, Stacks} from './style'
 import { Header } from '../../components/header'
 import { H1 } from '../../components/title'
 import { P } from '../../components/paragraph'

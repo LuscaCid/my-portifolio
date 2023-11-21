@@ -1,6 +1,6 @@
 import { Container } from "./style";
 import { P } from "../paragraph";
-export function ProjectCard({src, title, ...rest}){
+export function ProjectCard({updated_at,description ,src, title, ...rest}){
     return (
         <Container
         {...rest}
@@ -9,7 +9,10 @@ export function ProjectCard({src, title, ...rest}){
                 
                 <h1>{title}</h1>
                 <P
-                content="" 
+                content= {description} 
+                />
+                <P
+                content= {updated_at} 
                 />
             </a>
             
