@@ -5,11 +5,14 @@ export function ProjectCard({src, title, ...rest}){
         <Container
         {...rest}
         >
-            <img src={src} alt={title} />
-            <h1>{title}</h1>
-            <P
-            content="" 
-            />
+            <a target="_blank" href={`https://github.com/LuscaCid/${title} ` }>
+                
+                <h1>{title}</h1>
+                <P
+                content="" 
+                />
+            </a>
+            
         </Container>
 
     )

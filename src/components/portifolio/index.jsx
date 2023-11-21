@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 
 export function Portifolio({user}){
     const [data, setData] = useState([])
+    const [filteredData, setFilteredData] = useState([])
 
     useEffect(()=> {
         async function fetchData(user){
@@ -18,6 +19,11 @@ export function Portifolio({user}){
         fetchData(user)
     }, [])
     
+    useEffect(()=> { 
+        const filteredRepos = data.filter((repo) => repo.name.includes('api') || repo.name.includes('API') || repo.name.includes('frontend'))
+        console.log(filteredRepos)
+        setFilteredData(filteredRepos)
+    }, [data])
     return (
         <Container>
             <H1
@@ -26,14 +32,12 @@ export function Portifolio({user}){
             />
             {
             
-            data.map((repo, index) => {
-                console.log(data)
-                if(index < 20 && index > 15){
-                    return <ProjectCard 
-                    key = {String(index)}
-                    title = {repo.name} />
-                } else return
-                    
+            filteredData.map((repo, index) => {
+                 
+                return <ProjectCard 
+                key = {String(index)}
+                title = {repo.name} />
+                          
             })
             
             }

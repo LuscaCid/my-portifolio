@@ -5,7 +5,7 @@ export const Container = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 6rem;
+    margin-left: 1rem;
     height: 100vh;
     position: fixed;
     border-radius: 0 .4rem .4rem 0;

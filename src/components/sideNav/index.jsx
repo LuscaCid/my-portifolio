@@ -17,11 +17,16 @@ export function SideNav(){
             />
             <SocialButton
             src = "https://github.com/luscacid"
+            icon={FiMail}
+            title="My E-mail"
+            />
+            <SocialButton
+            src = "https://www.linkedin.com/in/lucas-cid-1ba940269/"
             icon={CiLinkedin}
             title="my Linkedin"
             />
             <SocialButton
-            src = "https://github.com/luscacid"
+            src = "https://instagram.com/luscacid"
             icon={FaInstagram}
             title="My instagram"
             />

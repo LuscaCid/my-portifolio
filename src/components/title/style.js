@@ -7,4 +7,5 @@ export const Container = styled.h1`
     border-bottom: ${({isPrincipal}) => isPrincipal ? "5px solid #414141" :  "3px solid #414141"};
     width: fit-content;
     border-radius: .4rem;
+    margin-bottom: 2rem;
 `
