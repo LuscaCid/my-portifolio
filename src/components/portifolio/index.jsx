@@ -26,7 +26,7 @@ export function Portifolio({user}){
         console.log(filteredRepos)
         setFilteredData(filteredRepos)
         async function fetchDataFiltered(user){
-            const token = "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"
+            const token = "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"
         
             const headers = new Headers({
                 'Authorization' : `token ${token}`,
