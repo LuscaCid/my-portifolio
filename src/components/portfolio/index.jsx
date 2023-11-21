@@ -1,8 +1,11 @@
-import {Container } from './style'
+import {Container, Photos } from './style'
 import { ProjectCard } from '../card-project'
 import { H1 } from '../title'
 import { useEffect, useState } from 'react'
-
+import rocket_notes_main from '../../photos/rocket-notes-main.png'
+import rocket_notes from '../../photos/rocket-notes-main.png'
+import netflix from '../../photos/netflix.png'
+import netflix_main from '../../photos/netflix-main.png'
 
 export function Portifolio({user}){
     const [data, setData] = useState([])
@@ -70,7 +73,15 @@ export function Portifolio({user}){
                 
             })
             }
-            
+            <H1
+            title= "Some photos..."
+            />
+            <Photos>
+                <img src={netflix} alt="" />
+                <img src={rocket_notes} alt="" />
+                <img src={netflix_main} alt="" />
+                <img src={rocket_notes_main} alt="" />
+            </Photos>
         </Container>
 
     )

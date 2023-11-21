@@ -1,4 +1,6 @@
 import {Container, MainContent, About, Stacks} from './style'
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 import { Header } from '../../components/header'
 import { H1 } from '../../components/title'
 import { P } from '../../components/paragraph'
@@ -18,6 +20,7 @@ import Sqlite_img from '../../assets/sqlite-svgrepo-com.svg'
 import Node_img from '../../assets/node.png'
 import Avatar_img  from '../../assets/avatar.jfif'
 
+
 export function Principal(){
 
   return (
@@ -32,8 +35,15 @@ export function Principal(){
             title = "I'm a fullstack developer"
             />
             <p>Hi! Welcome to my portifolio web-site. I'm fascinated by programming and i created a lot of single projects with Javascript, html, css, git, github, react, sqlite, node.js.</p>
-            <ButtonBlue title = "Portifolio" 
-            />
+            <Link 
+            to='projects'
+            smooth
+            duration={500}
+            >
+              <ButtonBlue 
+              title = "Portfolio" 
+              />
+            </Link>
           </div>
           
           <img src={Avatar_img} alt="user-image" />
