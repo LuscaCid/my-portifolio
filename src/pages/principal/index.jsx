@@ -37,8 +37,11 @@ export function Principal(){
           <P content = "My name is Lucas, I'm 20 years old and I'm passionate about technology, I came from a city in the interior of Bahia, and I've been developing software for approximately a year and a half, I currently work as an intern at the Santa Luzia hospital and I have the dream of starting to work as a developer coming soon."/>
 
         </About>
+      <div id="stacks">     
         <H1 title='Stacks'/>
-        <Stacks id='stacks'>
+      </div>  
+        
+        <Stacks >
           <StackCard
           lang= "react" 
           src = 'src/assets/react-svgrepo-com (1).svg'
@@ -86,10 +89,10 @@ export function Principal(){
           />
           
         </Stacks>
-        <div id='projects'>
-          <Portifolio 
+        
+        <Portifolio 
           user= "luscacid"/>
-        </div>
+        
         <div id="contact">
           <Contact/>
         </div>

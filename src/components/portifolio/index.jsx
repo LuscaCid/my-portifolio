@@ -50,9 +50,13 @@ export function Portifolio({user}){
     }, [data])
     return (
         <Container>
+            <div id="projects">
             <H1
+            
             title= "Some projects made by me..."
             />
+            </div>
+            
             {
             repoDetails.map((repo, index) => {
                 console.log(repoDetails)
