@@ -7,17 +7,18 @@ import { StackCard } from '../../components/stackCard'
 import { SideNav } from '../../components/sideNav'
 import { Portifolio } from '../../components/portfolio'
 import { Contact } from '../../components/contact'
-
-
+import Git_img from '../../assets/git.png'
+import Github_img from '../../assets/github.png'
+import React_img from '../../assets/react-svgrepo-com (1).svg'
+import Javascript_img from '../../assets/javascript.png'
+import Npm_img from '../../assets/npm-svgrepo-com.svg'
+import Css_img from '../../assets/css-3-svgrepo-com.svg'
+import Html_img from '../../assets/html-5-svgrepo-com.svg'
+import Sqlite_img from '../../assets/sqlite-svgrepo-com.svg'
+import Node_img from '../../assets/node.png'
+import Avatar_img  from '../../assets/avatar.jfif'
 
 export function Principal(){
-  const avatar_img = ``
-  const github_img = ``
-  const git_img = ``
-  const react_img = ``
-  const javascript_img = ``
-  const npm_img = ``
-  const sqlite_img = ``
 
   return (
     <Container>
@@ -35,7 +36,7 @@ export function Principal(){
             />
           </div>
           
-          <img src="./src/assets/avatar.jfif" alt="user-image" />
+          <img src={Avatar_img} alt="user-image" />
         </MainContent>
 
         <About>
@@ -52,47 +53,47 @@ export function Principal(){
         <Stacks >
           <StackCard
           lang= "react" 
-          src = '/src/assets/react-svgrepo-com (1).svg'
+          src = {React_img}
           title = "React.js"
           />
           <StackCard
           lang= "javascript" 
-          src = '/src/assets/javascript.png'
+          src = {Javascript_img}
           title = "javascript"
           />
           <StackCard
           lang= "git" 
-          src = '/src/assets/git.png'
+          src = {Git_img}
           title = "git"
           />
           <StackCard
           lang= "npm" 
-          src = '/src/assets/npm-svgrepo-com.svg'
+          src = {Npm_img}
           title = "npm"
           />
           <StackCard
           lang= "html" 
-          src = '/src/assets/html-5-svgrepo-com.svg'
+          src = {Html_img}
           title = "HTML"
           />
           <StackCard
           lang= "css" 
-          src = '/src/assets/css-3-svgrepo-com.svg'
+          src = {Css_img}
           title = "CSS"
           />
           <StackCard
           lang= "sqlite" 
-          src = '/src/assets/sqlite-svgrepo-com.svg'
+          src = {Sqlite_img}
           title = "sqlite"
           />
           <StackCard
           lang= "node" 
-          src = '/src/assets/node.png'
+          src = {Node_img}
           title = "node"
           />
           <StackCard
           lang= "github" 
-          src = {`/src/assets/github.png`}
+          src={Github_img}
           title = "github"
           />
           
