@@ -84,7 +84,7 @@ export function Principal(){
           />
           <StackCard
           lang= "github" 
-          src = './src/assets/github.png'
+          src = '../../assets/github.png'
           title = "github"
           />
           
