@@ -16,6 +16,7 @@ export function Portifolio({user}){
             console.log(response)  
             
             setData(response)
+
         }
         fetchData(user)
     }, [])
@@ -26,8 +27,7 @@ export function Portifolio({user}){
         setFilteredData(filteredRepos)
         async function fetchDataFiltered(user){
             const token = "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"
-           
-            
+        
             const headers = new Headers({
                 'Authorization' : `token ${token}`,
                 'Accept' : 'application/vnd.github.v3+json'
@@ -41,10 +41,10 @@ export function Portifolio({user}){
             filteredRepos.map(async(repo) => {
                 const infoDetaild = await fetch(`https://api.github.com/repos/${user}/${repo.name}`, options)
                 .then(data => data.json())
-                console.log(infoDetaild)
-                return setRepoDedails(prevState => [...prevState, infoDetaild])
+                setRepoDedails(prevState => [...prevState, infoDetaild])
+                return 
             })
-            
+
         }
         fetchDataFiltered(user)
     }, [data])
@@ -55,12 +55,13 @@ export function Portifolio({user}){
             />
             {
             repoDetails.map((repo, index) => {
-                 
+                console.log(repoDetails)
                 return <ProjectCard 
                         key = {String(index)}
                         title = {repo.name} 
                         description = {repo.description}
                         updated_at={repo.updated_at}
+                        img_url={repo.owner.avatar_url}
                         />
                 
             })
