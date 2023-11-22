@@ -11,25 +11,13 @@ export function Portifolio({user}){
     const [data, setData] = useState([])
     const [filteredData, setFilteredData] = useState([])
     const [repoDetails, setRepoDedails] = useState([])
+    const [responses, setResponses] = useState([])
 
-    useEffect(()=> {
-        async function fetchData(user){
-            const response = await fetch(`https://api.github.com/users/${user}/repos`)
-            .then(data => data.json())
-            console.log(response)  
-            
-            setData(response)
-
-        }
-        fetchData(user)
-    }, [])
+   
     
     useEffect(()=> { 
-        const filteredRepos = data.filter((repo) => repo.name.includes('api') || repo.name.includes('API') || repo.name.includes('frontend'))
-        console.log(filteredRepos)
-        setFilteredData(filteredRepos)
-        async function fetchDataFiltered(user){
-            const token = "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"
+        
+        const token = "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"
         
             const headers = new Headers({
                 'Authorization' : `${token}`,
@@ -40,17 +28,23 @@ export function Portifolio({user}){
                 method : "GET",
                 headers : headers
             }
+        
+        async function fetchDataFiltered(user){
+            
+            const allRepos = await fetch(`https://api.github.com/users/${user}/repos`)
+            .then(data => data.json())
+        
+            console.log(allRepos)
+            
+            const filteredByApi = allRepos.filter(repo => repo.name.includes("API") || repo.name.includes('api') || repo.name.includes('frontend') || repo.name.includes("react"))
+            console.log(filteredByApi[0].updated_at)
 
-            filteredRepos.map(async(repo) => {
-                const infoDetaild = await fetch(`https://api.github.com/repos/${user}/${repo.name}`, options)
-                .then(data => data.json())
-                setRepoDedails(prevState => [...prevState, infoDetaild])
-                return 
-            })
+            setRepoDedails(filteredByApi) 
+        }   
 
-        }
+
         fetchDataFiltered(user)
-    }, [data])
+    }, [])
     return (
         <Container>
             <div id="projects">
@@ -62,12 +56,16 @@ export function Portifolio({user}){
             
             {
             repoDetails.map((repo, index) => {
-                console.log(repoDetails)
+                const dates = repo.updated_at
+                const formatedDate = dates.replaceAll('-', '/')
+                const finalDate = formatedDate.slice(0, 10)
+                const formatedTime = formatedDate.slice(11, formatedDate.length -1)
+                console.log(finalDate)
                 return <ProjectCard 
                         key = {String(index)}
                         title = {repo.name} 
                         description = {repo.description}
-                        updated_at={repo.updated_at}
+                        updated_at={`${finalDate} at ${formatedTime}`}
                         img_url={repo.owner.avatar_url}
                         />
                 
