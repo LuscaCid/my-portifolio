@@ -30,6 +30,14 @@ export const MainContent = styled.div`
             color: rgb(210,210,230);
         }
     }
+    @media(max-width: 44em){
+        display: flex;
+        flex-direction: column;
+        .texts{
+            width: min(40rem, 90%);
+            
+        }
+    } 
 `
 
 export const About = styled.div`

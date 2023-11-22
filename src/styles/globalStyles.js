@@ -19,4 +19,11 @@ export default createGlobalStyle`
     background: linear-gradient(125deg, ${({theme}) => theme.colors.background}, ${({theme}) => theme.colors.background2} ) ;
   }
     
+  @media(max-width:46em){
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 `

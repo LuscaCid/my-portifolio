@@ -8,4 +8,8 @@ export const Container = styled.h1`
     width: fit-content;
     border-radius: .4rem;
     margin-bottom: 2rem;
+
+    @media(max-width:44em){
+        font-size: 2.5rem;
+    } 
 `

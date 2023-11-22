@@ -32,5 +32,9 @@ export const Container = styled.header`
     >nav ul li:hover{
         transform: scale(1.03);
     }
-
+    @media(max-width:44em){
+        nav ul{
+            display: none;
+        }
+    }  
 `
