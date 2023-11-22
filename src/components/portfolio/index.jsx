@@ -65,7 +65,7 @@ export function Portifolio({user}){
                         key = {String(index)}
                         title = {repo.name} 
                         description = {repo.description}
-                        updated_at={`Last commit ${finalDate} at ${formatedTime}`}
+                        updated_at={`Last commit: ${finalDate} at ${formatedTime}`}
                         img_url={repo.owner.avatar_url}
                         />
                 
