@@ -10,6 +10,6 @@ export const Container = styled.h1`
     margin-bottom: 2rem;
 
     @media(max-width:44em){
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     } 
 `
