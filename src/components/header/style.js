@@ -32,7 +32,7 @@ export const Container = styled.header`
     >nav ul li:hover{
         transform: scale(1.03);
     }
-    @media(max-width:44em){
+    @media(max-width:42em){
         nav ul{
             display: none;
         }

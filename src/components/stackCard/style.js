@@ -45,4 +45,7 @@ export const Container = styled.div`
     &:hover{
         transform: scale(1.05);
     }
+    @media(max-width:41em){
+        width: 25rem ;
+    }
 `

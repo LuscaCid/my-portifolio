@@ -34,7 +34,7 @@ export const MainContent = styled.div`
         display: flex;
         flex-direction: column;
         .texts{
-            width: min(40rem, 90%);
+            width: min(41rem, 90%);
             
         }
     } 
