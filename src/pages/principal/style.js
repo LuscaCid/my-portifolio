@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    
     padding: 14rem 0;
     >main{
-        width: min(100rem, 80%);
-        margin: auto;
+    
+        width: min(100rem, 88%);
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 7rem;
     }
     @media(max-width: 41em){
@@ -15,19 +18,22 @@ export const Container = styled.div`
             width: min(30rem, 90%);
         }
     } 
+    #contact{
+        width: 100%;
+    }
 `
 
 export const MainContent = styled.div`
     display: flex;
     gap: 3rem;
-   
+    width: 100%;
     >img{
         width: 30rem;
         height: 30rem;
         border-radius: 2rem;
     }
     .texts{ 
-        width: min(90rem, 90%) ;
+        width: min(90rem, 100%) ;
         display: flex;
         flex-direction: column;
         gap: 2.3rem;
@@ -36,13 +42,13 @@ export const MainContent = styled.div`
             color: rgb(210,210,230);
         }
     }
-    @media(max-width: 44em){
+    @media(max-width: 42em){
         display: flex;
         flex-direction: column;
         
         >img{
-            width: 24rem;
-            height: 24rem;
+            width: 100%;
+            object-fit: cover;
         }
     } 
 `

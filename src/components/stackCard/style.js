@@ -1,5 +1,6 @@
 import styled from "styled-components"
 export const Container = styled.div`
+    margin: 0 auto;
     width: 32rem;
     padding: 3rem 5rem;
     background: none;
@@ -46,6 +47,6 @@ export const Container = styled.div`
         transform: scale(1.05);
     }
     @media(max-width:41em){
-        width: 25rem ;
+        width: 27rem ;
     }
 `

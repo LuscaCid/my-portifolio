@@ -20,6 +20,12 @@ export const Photos = styled.div`
     box-shadow: 0 1rem 2rem -1rem #00000020;
   }
   >img:hover{
-    transform: scale(1.1);
+    transform: scale(1.16);
   }
+  @media(max-width:42em){
+
+    >img{
+      width: 100%;
+    }
+  } 
 `
