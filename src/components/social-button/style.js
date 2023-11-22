@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    
+   
     width: ${({hovered}) => {
             if(hovered)return "30rem"  
             else return "fit-content"
@@ -23,7 +23,9 @@ export const Container = styled.div`
         
         >a{
             padding: 0.2rem .7rem;
-            width: 4.3rem;
+            img{
+                width: 4.3rem;
+            }
         }
     } 
 `
