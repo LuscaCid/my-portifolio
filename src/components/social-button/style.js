@@ -3,12 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     
     width: ${({hovered}) => {
-        console.log(hovered)
-            if(hovered){
-                return "30rem"
-            } else {
-                return "fit-content"
-            }
+            if(hovered)return "30rem"  
+            else return "fit-content"
         }};
       
     >a{
