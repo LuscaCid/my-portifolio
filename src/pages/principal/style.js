@@ -9,6 +9,12 @@ export const Container = styled.div`
         flex-direction: column;
         gap: 7rem;
     }
+    @media(max-width: 41em){
+        padding: 10rem 0;
+        >main{
+            width: min(30rem, 90%);
+        }
+    } 
 `
 
 export const MainContent = styled.div`
@@ -21,7 +27,7 @@ export const MainContent = styled.div`
         border-radius: 2rem;
     }
     .texts{ 
-        width: min(90rem) ;
+        width: min(90rem, 90%) ;
         display: flex;
         flex-direction: column;
         gap: 2.3rem;
@@ -33,9 +39,10 @@ export const MainContent = styled.div`
     @media(max-width: 44em){
         display: flex;
         flex-direction: column;
-        .texts{
-            width: min(41rem, 90%);
-            
+        
+        >img{
+            width: 24rem;
+            height: 24rem;
         }
     } 
 `

@@ -8,6 +8,7 @@ export const Container = styled.div`
     &:hover{
         filter: brightness(.9);
     }
+    width: 100%;
     color: #808080;
     padding: 1.2rem 1.6rem;
     border: 1px solid #414141;
