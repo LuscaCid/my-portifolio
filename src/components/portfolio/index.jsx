@@ -31,7 +31,7 @@ export function Portifolio({user}){
         
         async function fetchDataFiltered(user){
             
-            const allRepos = await fetch(`https://api.github.com/users/${user}/repos`)
+            const allRepos = await fetch(`https://api.github.com/users/${user}/repos`, options)
             .then(data => data.json())
         
             console.log(allRepos)
